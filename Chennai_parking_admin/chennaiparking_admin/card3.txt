@@ -1,0 +1,92 @@
+<card3> // occupied slots page
+
+
+<quad>
+<quadLoop>create</quadLoop>
+<getFromCloud>countvar($clubname,$date,$address)$returnVar</getFromCloud> <flow>$returnVar=="ok"</flow>
+<goTo>card5</goTo>
+<message>Unable to retrieve data!
+</message>
+</quad>
+
+<quad>	// Logo
+<id>1</id>
+<type>image</type>
+<src>acccure.png</src>
+<margin>0,30,0,0</margin>
+<cardBgColor>#082d42</cardBgColor>
+</quad>
+
+
+<quad>
+<id>2</id>
+<type>text</type>
+<textView></textView>
+<textColor>#324065</textColor>
+<fontSize>16</fontSize>
+<margin>70,50,20,0</margin>
+<align>center</align>
+<fontStyle>italic</fontStyle>
+<src></src>
+</quad>
+
+<quad>
+<id>3</id>
+<type>text</type>
+<textView>Investigations</textView>
+<textColor>#ffffff</textColor>
+<fontSize>20</fontSize>
+<margin>70,50,20,0</margin>
+<align>center</align>
+<fontStyle>bold</fontStyle>
+<src></src>
+</quad>
+
+
+<quad> // Get Tournaments Name
+<id>4</id> 
+<var>$mobile</var>
+<type>text</type>
+<textColor>#046e8f</textColor>
+<fontSize>20</fontSize>
+<margin>70,50,20,0</margin>
+<align>left</align>
+<fontStyle>bold</fontStyle>
+</quad>
+
+<quad> // Tournaments Date and Time
+<id>5</id>
+<var>$parkingname</var>
+<type>text</type>
+<textColor>#046e8f</textColor>
+<fontSize>15</fontSize>
+<margin>80,50,20,0</margin>
+<align>left</align>
+<fontStyle>normal</fontStyle></quad>
+
+<quad> // Tournaments Address
+<id>6</id>
+<var>$injured</var>
+<type>text</type>
+<textColor>#046e8f</textColor>
+<fontSize>15</fontSize>
+<margin>90,50,20,0</margin>
+<align>left</align>
+<fontStyle>italic</fontStyle>
+</quad>
+
+<quad> // Tournaments Address
+<id>6</id>
+<var>$accident</var>
+<type>text</type>
+<textColor>#046e8f</textColor>
+<fontSize>15</fontSize>
+<margin>90,50,20,0</margin>
+<align>left</align>
+<fontStyle>italic</fontStyle>
+</quad>
+
+
+
+
+</card3>

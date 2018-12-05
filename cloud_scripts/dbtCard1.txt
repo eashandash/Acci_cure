@@ -1,0 +1,84 @@
+<table1>//Acci cure app Table
+
+
+<field1>
+<tablename>parking_lot
+</tablename>
+</field1>
+
+
+
+
+
+<field2>
+<id>1</id>
+<fieldname>sno</fieldname>
+<datatype>int</datatype>
+<charcount>200</charcount>
+
+<privileges>UNSIGNED AUTO_INCREMENT PRIMARY KEY</privileges>
+</field2>
+
+
+<field3>
+<id>2</id>
+<fieldname>phone</fieldname>
+<datatype>varchar</datatype>
+<charcount>100</charcount>
+
+<privileges>NOT NULL</privileges>
+
+</field3> 
+
+
+
+
+<field4>
+<id>3</id>
+<fieldname>parking_name</fieldname>
+<datatype>varchar</datatype>
+<charcount>100</charcount>
+
+<privileges>NOT NULL</privileges>
+</field4> 
+
+
+
+
+<field5>
+<id>4</id>
+<fieldname>latitude_longitude</fieldname>
+<datatype>varchar</datatype>
+<charcount>100</charcount>
+<privileges>NOT NULL</privileges>
+</field5>
+
+
+<field5>
+<id>4</id>
+<fieldname>total_parking</fieldname>
+<datatype>varchar</datatype>
+<charcount>100</charcount>
+<privileges>NOT NULL</privileges>
+</field5>
+
+<field6>
+<id>5</id>
+<fieldname>free_parking</fieldname>
+<datatype>varchar</datatype>
+<charcount>100</charcount>
+<privileges>NOT NULL</privileges>
+</field6>
+
+
+<field7>
+<id>6</id>
+<fieldname>occupied_parking</fieldname>
+<datatype>int</datatype>
+<charcount>100</charcount>
+<privileges>NOT NULL</privileges>
+</field7>
+
+
+
+</table1>

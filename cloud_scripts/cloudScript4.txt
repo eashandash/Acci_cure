@@ -1,0 +1,6 @@
+//Insert query---page4
+insertvar($parkname,$totalslot,$occupied_parking); 
+function insertvar($parkname,$totalslot,$occupied_parking) { 
+$result = mysql_query("INSERT INTO `parking_lot`(`phone`,`parking_name`,`latitude_longitude`,`total_parking`,`occupied_parking`) VALUES('$phone','$parkname','$currentlocation','$totalslot','$occupied_parking')") or die(mysql_error()); 
+[$returnVar=="ok"]
+}

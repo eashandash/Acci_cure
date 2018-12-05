@@ -1,0 +1,17 @@
+//Select query---page1 
+countvar('$qty1','$qty2','$qty3');
+function countvar($qty1,$qty2,$qty3) 
+{$result = mysql_query("SELECT `total_parking`,`free_parking`,`occupied_parking`FROM`parking_lot` ORDER BY sno DESC LIMIT 1") or die(mysql_error());
+$resultArray = array();
+while($row = mysql_fetch_assoc($result)) {
+$arrCol = array();
+$arrCol['$qty'] = $row["total_parking"];
+array_push($resultArray, $arrCol);
+unset($arrCol);
+$arrCol['$qty'] = $row["free_parking"];  array_push($resultArray, $arrCol);
+unset($arrCol);
+$arrCol['$qty'] = $row["occupied_parking"];  
+array_push($resultArray, $arrCol);
+}
+echo json_encode($resultArray);
+}

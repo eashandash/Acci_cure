@@ -1,0 +1,76 @@
+<card6> // Parking lot
+
+<quad>
+<quadLoop>gpsmap</quadLoop>
+<getFromCloud>countvar($parking_name,$latitude_longitude,$total_parking,$free_parking,$occupied_parking)$returnVar</getFromCloud>
+<flow>$returnVar=="ok"</flow>		
+<goto>card4</goto>
+<message>Unable to retrieve data!</message>
+</quad>
+
+<quad> // $parking_name
+<id>1</id>
+<type>text</type>
+<textView></textView>
+<var>$parking_name</var>
+<textColor>#324065</textColor>
+<fontSize>20</fontSize>
+<margin>70,50,20,0</margin>
+<align>left</align>
+<fontStyle>bold</fontStyle>
+<src></src>
+</quad>
+
+<quad>	// $latitude_longitude 
+<id>2</id>					
+<type>text</type>
+<textView></textView>
+<var>$latitude_longitude</var>
+<textColor>#324065</textColor>
+<fontSize>15</fontSize>
+<margin>80,50,20,0</margin>
+<align>left</align>
+<fontStyle>normal</fontStyle>
+<src></src>
+</quad>
+
+<quad>	// $total_parking
+<id>3</id>					
+<type>text</type>
+<textView></textView>
+<var>$total_parking</var>
+<textColor>#324065</textColor>
+<fontSize>15</fontSize>
+<margin>90,50,20,0</margin>
+<align>left</align>
+<fontStyle>italic</fontStyle>
+<src></src>
+</quad>
+
+<quad>	// $free_parking
+<id>4</id>					
+<type>text</type>
+<textView></textView>
+<var>$free_parking</var>
+<textColor>#324065</textColor>
+<fontSize>15</fontSize>
+<margin>90,50,20,0</margin>
+<align>left</align>
+<fontStyle>italic</fontStyle>
+<src></src>
+</quad>
+
+<quad>	// $occupied_parking
+<id>5</id>					
+<type>text</type>
+<textView></textView>
+<var>$occupied_parking</var>
+<textColor>#324065</textColor>
+<fontSize>15</fontSize>
+<margin>90,50,20,0</margin>
+<align>left</align>
+<fontStyle>italic</fontStyle>
+<src></src>
+</quad>
+
+</card6>

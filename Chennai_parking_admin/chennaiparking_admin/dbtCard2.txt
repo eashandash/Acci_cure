@@ -1,0 +1,9 @@
+<table2>//Chennai parking app Table
+
+
+<field1>
+<tablename>parking_lot
+</tablename>
+</field1>
+
+</table2>

@@ -1,0 +1,5 @@
+//Insert query---page5
+insertvar($bath,$quantity); function insertvar($bath,$quantity) {
+date_default_timezone_set('Asia/kolkata');$today = date("F j, Y, g:i a T");
+$result = mysql_query("UPDATE `hotel_admin` SET Customer_service = '$bath',Quantity = $quantity, Customer_name = '$name',Customer_email = '$email',datetime = '$today' WHERE Phone = $phone") or die(mysql_error());[$returnVar=="ok"]
+}

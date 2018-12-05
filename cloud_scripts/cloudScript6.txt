@@ -1,0 +1,16 @@
+//Insert query---page6
+parkvar($parking_name,$latitude_longitude,$total_parking,$free_parking,$occupied_parking);
+function parkvar($parking_name,$latitude_longitude,$total_parking,$free_parking,$occupied_parking) 
+{$result = mysql_query("SELECT *FROM parking_lot ORDER BY sno") or die(mysql_error());
+$resultArray = array();
+while($row = mysql_fetch_assoc($result)) {
+$arrCol = array();
+$arrCol['$parking_name'] = $row["parking_name"];
+$arrCol['$latitude_longitude'] = $row["latitude_longitude"];
+$arrCol['$total_parking'] = $row["total_parking"];
+$arrCol['$free_parking'] = $row["free_parking"];
+$arrCol['$occupied_parking'] = $row["occupied_parking"];
+array_push($resultArray, $arrCol);
+}
+echo json_encode($resultArray);
+}

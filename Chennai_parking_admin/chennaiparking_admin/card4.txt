@@ -1,0 +1,101 @@
+<card4> // New parking page
+
+<quad>	// Logo
+<id>1</id>
+<type>image</type>
+<src>acccure.png</src>
+<margin>0,30,0,0</margin>
+<cardBgColor>#082d42</cardBgColor>
+</quad>
+
+<quad> // text
+<id>2</id>
+<type>text</type>
+<text>Victim Details</text>
+<fontSize>20</fontSize>
+<textColor>#ff8c00</textColor>
+<align>center</align>
+<margin>0,40,0,0</margin>
+</quad>
+
+
+<quad> // text
+<id>3</id>
+<type>text</type>
+<text>Location Name</text>
+<fontSize>18</fontSize>
+<textColor>#ffffff</textColor>
+<margin>45,30,40,0</margin>
+</quad>
+
+
+<quad>	// Textfield for parking name input						
+<id>4</id>
+<var>$parkname</var>
+<type>textfield</type>
+<textColor>#ffffff</textColor>
+<inputType>text</inputType>
+<fontFamily>sans-serif-light</fontFamily>
+<margin>40,0,40,0</margin>			
+</quad>
+
+<quad> // text
+<id>5</id>
+<type>text</type>
+<text>No of People Injured</text>
+<fontSize>18</fontSize>
+<textColor>#ffffff</textColor>
+<margin>45,30,40,0</margin>
+</quad>
+
+
+<quad>	// Textfield for total slots input						
+<id>6</id>
+<var>$totalslot</var>
+<type>textfield</type>
+<textColor>#ffffff</textColor>
+<inputType>number</inputType>
+<fontFamily>sans-serif-light</fontFamily>
+<margin>40,0,40,0</margin>			
+</quad>
+
+<quad> // text
+<id>7</id>
+<type>text</type>
+<text>Vehicle Number</text>
+<fontSize>18</fontSize>
+<textColor>#ffffff</textColor>
+<margin>45,30,40,0</margin>
+</quad>
+
+
+<quad>	// Textfield for total slots input						
+<id>8</id>
+<var>$occupied_parking</var>
+<type>textfield</type>
+<textColor>#ffffff</textColor>
+<inputType>text</inputType>
+<fontFamily>sans-serif-light</fontFamily>
+<margin>40,0,40,0</margin>			
+</quad>
+
+
+
+<quad> // Button
+<id>11</id>
+<text>Submit</text>
+<type>button</type>
+<fontSize>18</fontSize>
+<fontFamily>sans-serif</fontFamily>
+<sendToCloud>insertvar($parkname,$totalslot,$occupied_parking)$returnVar</sendToCloud>	
+<flow>$returnVar=="ok"</flow>		
+<goTo>card6</goTo>
+<message>Invalid script Format</message>	
+<margin>40,60,40,170</margin>
+ <padding>0,20,0,20</padding>
+<textColor>#ffffff</textColor>
+<bgColor>#2e8b57</bgColor>
+<align>center</align>
+</quad>
+
+</card4>

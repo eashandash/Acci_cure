@@ -1,0 +1,149 @@
+<card1> // Dashboard page
+
+<quad>	// Logo
+<id>1</id>
+<type>image</type>
+<src>acccure.png</src>
+<margin>0,10,0,0</margin>
+<cardBgColor>#082d42</cardBgColor>
+</quad>
+
+<quad> // text
+<id>2</id>
+<type>image</type>
+<src>current1.png</src>
+<margin>0,20,0,0</margin>
+<goTo>card6</goTo>
+</quad>
+
+
+<quad>	// Logo
+<id>3</id>
+<type>text</type>
+<text>Current Location</text>
+<fontSize>19</fontSize>
+<textColor>#ffffff</textColor>
+<fontStyle>normal</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+<align>center</align>
+<margin>0,0,0,0</margin>
+<goTo>card6</goTo>
+</quad>
+
+<quad> // tagline
+	<id>4</id>
+	<type>text</type>
+	<text>Press button to see your current location </text>
+	<textColor>#ffffb3</textColor>
+	<fontSize>14</fontSize>
+	<margin>80,10,80,0</margin>
+	<padding>0,0,0,0</padding>
+	<fontStyle>italic</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+	<align>center</align>
+<goTo>card6</goTo>
+</quad>
+<quad> // icons
+<id>5</id>			
+<type>image</type>	<src>victim1.png</src>
+<margin>0,20,0,0</margin>
+<goTo>card4</goTo>
+</quad>
+
+<quad> // text
+<id>6</id>
+<type>text</type>
+<text>Victim Details</text>
+<fontSize>19</fontSize>
+<textColor>#ffffff</textColor>
+<fontStyle>normal</fontStyle>
+<fontFamily>sans-serif-medium</fontFamily>
+<align>center</align>
+<margin>0,0,0,0</margin>
+<goTo>card4</goTo>
+</quad>
+
+<quad> // tagline
+	<id>7</id>
+	<type>text</type>
+	<text>Enter the details of the victim in the accident area</text>
+	<textColor>#ffffb3</textColor>
+	<fontSize>14</fontSize>
+	<margin>80,10,80,0</margin>
+	<padding>0,0,0,0</padding>
+	<fontStyle>italic</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+	<align>center</align>
+</quad>
+
+<quad> // text
+<id>8</id>
+<type>image</type>
+<src>trauma1.png</src>
+<margin>0,20,0,0</margin>
+<goTo>card2</goTo>
+</quad>
+
+<quad>	// Logo
+<id>9</id>
+<type>text</type>
+<text>Trauma Care</text>
+<fontSize>19</fontSize>
+<textColor>#ffffff</textColor>
+<fontStyle>normal</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+<align>center</align>
+<margin>0,0,0,0</margin>
+<goTo>card2</goTo>
+</quad>
+
+<quad> // tagline
+	<id>10</id>
+	<type>text</type>
+	<text>Trauma victim details are shown here</text>
+	<textColor>#ffffb3</textColor>
+	<fontSize>14</fontSize>
+	<margin>80,10,80,0</margin>
+	<padding>0,0,0,0</padding>
+	<fontStyle>italic</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+	<align>center</align>
+</quad>
+
+<quad>	// Textfield for phone no input						
+<id>11</id>
+<type>image</type>
+<src>investigation1.png</src>
+<margin>0,20,0,0</margin>
+<goTo>card3</goTo>
+</quad>
+
+<quad>	// Logo
+<id>12</id>
+<type>text</type>
+<text>Investigations</text>
+<fontSize>19</fontSize>
+<textColor>#ffffff</textColor>
+<fontStyle>normal</fontStyle>
+<fontFamily>sans-serif-medium</fontFamily>
+<align>center</align>
+<margin>0,0,0,0</margin>
+<goTo>card3</goTo>
+</quad>
+
+<quad> // tagline
+	<id>13</id>
+	<type>text</type>
+	<text>The cop investigation details are shown here</text>
+	<textColor>#ffffb3</textColor>
+	<fontSize>14</fontSize>
+	<margin>80,10,80,0</margin>
+	<padding>0,0,0,0</padding>
+	<fontStyle>italic</fontStyle>
+	<fontFamily>sans-serif-medium</fontFamily>
+	<align>center</align>
+</quad>
+
+
+
+</card1>

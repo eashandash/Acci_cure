@@ -1,0 +1,4 @@
+//Select query---page2
+countvar();function countvar(){$result = mysql_query("SELECT `sno`, `phone`,`parking_name`,`total_parking`,`occupied_parking` FROM `parking_lot` WHERE `checkable` = '0' ") or die(mysql_error());$resultArray = array();while($row = mysql_fetch_assoc($result)){$arrCol = array();
+$arrCol['$sno'] = $row["sno"];$arrCol['$mobile'] = $row["phone"];$arrCol['$parkingname'] = $row["parking_name"];$arrCol['$injured'] = $row["total_parking"];$arrCol['$accident'] = $row["occupied_parking"];array_push($resultArray,$arrCol);}echo json_encode($resultArray);
+}

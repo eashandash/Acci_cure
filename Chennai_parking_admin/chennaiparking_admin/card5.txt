@@ -1,0 +1,6 @@
+<card5> // Admin page
+
+<adminUserManagement>
+</adminUserManagement>
+
+</card5>
